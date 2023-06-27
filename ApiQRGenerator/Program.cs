@@ -29,7 +29,7 @@ namespace ApiQRGenerator
                 ms.Write(bitMap);
                 byte[] data = ms.ToArray();
                 var result = Convert.ToBase64String(data);
-                return Convert.ToBase64String(data);
+                return result;
             });
             app.Run();
         }
